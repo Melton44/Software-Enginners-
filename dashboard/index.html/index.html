@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toiwet Farmers Group Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Toiwet Sheep Farmers Portal</h1>
+            <p>Management System for Members, Ledger, and Livestock</p>
+        </header>
+
+        <div class="card-grid">
+            <!-- Secretary Column -->
+            <div class="card">
+                <h2>Secretary Module</h2>
+                <form id="announcementForm">
+                    <input type="text" id="annTitle" placeholder="Announcement Title" required style="width:100%; margin-bottom:10px;"><br>
+                    <textarea id="annContent" placeholder="Announcement Body" required style="width:100%; height:80px; margin-bottom:10px;"></textarea><br>
+                    <button type="submit">Publish Update</button>
+                </form>
+            </div>
+
+            <!-- Financial Summary Column -->
+            <div class="card">
+                <h2>Treasurer Ledger Summary</h2>
+                <p><strong>Total Funds:</strong> KES <span id="totalBalance">0.00</span></p>
+                <button onclick="fetchFinancials()">Generate Report</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
