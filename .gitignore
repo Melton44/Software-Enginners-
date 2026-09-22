@@ -1,0 +1,57 @@
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ENV
+.ENV.local
+.env
+.env.local
+.env.*
+.env.local.*
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Security
+SECURITY_IMPROVEMENTS.md
+
+# Compiled and build artifacts
+*.o
+*.obj
+*.out
+dist/
+build/
+*.class
+*.so
+*.a
+*.dll
+*.exe
+
+# Dependencies
+node_modules/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editors
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+```

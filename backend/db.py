@@ -1,11 +1,16 @@
 import psycopg2
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def get_db_connection():
     conn = psycopg2.connect(
-        host="localhost",
-        database="TUIYMET",  # Replace with your DB name
-        user="postgres",                # Replace with your DB username
-        password="1041",        # Replace with your DB password
-        port="5432"
+        host=os.getenv("DB_HOST", "localhost"),
+        database=os.getenv("DB_NAME", "TUIYMET"),
+        user=os.getenv("DB_USER", "postgres"),
+        password=os.getenv("DB_PASSWORD"),
+        port=os.getenv("DB_PORT", "5432")
     )
     return conn
