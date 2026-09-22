@@ -1,57 +1,45 @@
 ```
-# Python
+# Environment variables
+.env*
+
+# Docker related
+.dockerenv
+Dockerfile*
+docker-compose*
+
+# Dependencies
+venv/
+.venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
 env/
-venv/
-.venv/
-.ENV
-.ENV.local
-.env
-.env.local
-.env.*
-.env.local.*
-.python-version
-pip-log.txt
-pip-delete-this-directory.txt
+env.bak/
+venv.bak/
 
-# Security
-SECURITY_IMPROVEMENTS.md
-
-# Compiled and build artifacts
-*.o
-*.obj
-*.out
-dist/
+# Build artifacts
 build/
-*.class
-*.so
-*.a
-*.dll
-*.exe
+dist/
+*.egg-info/
 
-# Dependencies
-node_modules/
-.mypy_cache/
-.pytest_cache/
-.coverage
-coverage/
-htmlcov/
-
-# Logs and temp files
+# Logs
 *.log
-*.tmp
-*.swp
-*.swo
 
-# Editors
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
 .vscode/
 .idea/
-
-# System files
-.DS_Store
-Thumbs.db
+*.swp
+*.swo
+*~
 ```
